@@ -3,7 +3,7 @@ package DataStructure.LinearAndBinarySerach;
 public class IfTargetIsPresentInListLinearSearch {
     public static void main(String[] args){
 
-        int nums[] = {5,6,7,9,11,13};
+        int nums[] = {1, 2, 3, 5, 6, 7, 9, 10, 11, 13};
         int target = 11;
 
         int result = linearSearch(nums, target);
@@ -16,12 +16,15 @@ public class IfTargetIsPresentInListLinearSearch {
     }
 
     public static int linearSearch(int[] nums, int target){
-
+        int steps = 0;
         for(int i = 0; i<nums.length; i++) {
-            if(nums[i] == target)
+            steps++;
+            if(nums[i] == target) {
+                System.out.println("Steps taken to find the element by LinearSearch: " + steps);
                 return i;
+            }
         }
-
+        System.out.println("Steps taken to find the element by LinearSearch: " + steps); // In  case element is not found in the array
         return -1;
     }
 }
