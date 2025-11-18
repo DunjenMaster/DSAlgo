@@ -1,6 +1,6 @@
 package DataStructure.LinearAndBinarySerach;
 
-public class IfTargetIsPresentInList {
+public class IfTargetIsPresentInListLinearSearch {
     public static void main(String[] args){
 
         int nums[] = {5,6,7,9,11,13};
