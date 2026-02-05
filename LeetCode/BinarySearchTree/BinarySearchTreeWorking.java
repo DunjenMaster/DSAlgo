@@ -1,4 +1,4 @@
-package DataStructure.BinarySearchTree;
+package DataStructure.LeetCode.BinarySearchTree;
 
 public class BinarySearchTreeWorking {
 
