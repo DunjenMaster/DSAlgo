@@ -6,7 +6,11 @@ public class BinarySearchTreeWorking {
 
         int startIndex = 0;
         int endIndex = arr.length-1;
-        int midIndex = ((startIndex + endIndex)/2);
+        //When input of integer size is in range!
+        //int midIndex = ((startIndex + endIndex)/2);
+
+        // when input size is outside the range!
+        int midIndex = (startIndex + (endIndex - startIndex)/2);
 
         while(startIndex <= endIndex) {
 
@@ -20,7 +24,8 @@ public class BinarySearchTreeWorking {
                 endIndex = midIndex - 1;
             }
 
-            midIndex = (startIndex + endIndex)/2;
+            //midIndex = (startIndex + endIndex)/2;
+            midIndex = (startIndex + (endIndex - startIndex)/2);
         }
 
         return -1;
@@ -31,7 +36,7 @@ public class BinarySearchTreeWorking {
         int[] even = {2,4,6,8,12,18};
         int[] odd = {3,8,11,14,16};
 
-        System.out.println("Check the index present in the Even List " + binaryTree(even,20));
+        System.out.println("Check the index present in the Even List " + binaryTree(even,18));
         System.out.println("Check the index present in the Odd List " + binaryTree(odd,5));
 
 
